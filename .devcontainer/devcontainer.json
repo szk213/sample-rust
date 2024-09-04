@@ -4,9 +4,17 @@
   "service": "rust-dev",
   "workspaceFolder": "/work",
   "customizations": {
+    "vscode": {
     "settings": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "[rust]": {
+      	"editor.defaultFormatter": "rust-lang.rust-analyzer",
+      	"editor.formatOnSave": true,
+      	"editor.inlayHints.enabled": "off"
+      }
     },
     "extensions": [
+      "esbenp.prettier-vscode",
       "ms-azuretools.vscode-docker",
       "ms-vscode.makefile-tools",
       "mhutchie.git-graph",
@@ -18,5 +26,7 @@
       "vadimcn.vscode-lldb",
       "rust-lang.rust-analyzer"
     ]
+    },
+
   }
 }
