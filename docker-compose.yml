@@ -1,0 +1,7 @@
+services:
+  rust-dev:
+    build:
+      context: .
+    volumes:
+      - ./:/work
+    tty: true

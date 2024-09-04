@@ -1,0 +1,22 @@
+{
+  "name": "Rust Development Environment",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "rust-dev",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "settings": {
+    },
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "ms-vscode.makefile-tools",
+      "mhutchie.git-graph",
+      "eamodio.gitlens",
+      "donjayamanne.githistory",
+      "streetsidesoftware.code-spell-checker",
+      "shd101wyy.markdown-preview-enhanced",
+      "ms-azuretools.vscode-docker",
+      "vadimcn.vscode-lldb",
+      "rust-lang.rust-analyzer"
+    ]
+  }
+}
