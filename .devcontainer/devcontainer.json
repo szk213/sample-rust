@@ -5,28 +5,33 @@
   "workspaceFolder": "/work",
   "customizations": {
     "vscode": {
-    "settings": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "[rust]": {
-      	"editor.defaultFormatter": "rust-lang.rust-analyzer",
-      	"editor.formatOnSave": true,
-      	"editor.inlayHints.enabled": "off"
-      }
-    },
-    "extensions": [
-      "esbenp.prettier-vscode",
-      "ms-azuretools.vscode-docker",
-      "ms-vscode.makefile-tools",
-      "mhutchie.git-graph",
-      "eamodio.gitlens",
-      "donjayamanne.githistory",
-      "streetsidesoftware.code-spell-checker",
-      "shd101wyy.markdown-preview-enhanced",
-      "ms-azuretools.vscode-docker",
-      "vadimcn.vscode-lldb",
-      "rust-lang.rust-analyzer"
-    ]
-    },
-
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[rust]": {
+          "editor.defaultFormatter": "rust-lang.rust-analyzer",
+          "editor.formatOnSave": true,
+          "editor.inlayHints.enabled": "off"
+        },
+        /* -----------------------------------
+        // rust-analyzer設定(リンター)
+        ----------------------------------- */
+        "rust-analyzer.checkOnSave": true,
+        "rust-analyzer.check.command": "clippy",
+        "rust-analyzer.check.extraArgs": ["--", "-A", "clippy::needless_return"]
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.makefile-tools",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "streetsidesoftware.code-spell-checker",
+        "shd101wyy.markdown-preview-enhanced",
+        "ms-azuretools.vscode-docker",
+        "vadimcn.vscode-lldb",
+        "rust-lang.rust-analyzer"
+      ]
+    }
   }
 }
